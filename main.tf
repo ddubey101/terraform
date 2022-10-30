@@ -8,10 +8,12 @@ terraform {
 }
 
 provider "aws" {
+  assume_role {
   region = var.region
   role_arn     = "arn:aws:iam::432384616762:role/dev-user-role-101"
   session_name = "SESSION_NAME"
   external_id  = "ddubey-dev-user101"
+  }
 }
 
 variable "region" {
