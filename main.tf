@@ -25,7 +25,11 @@ variable "region" {
 
 resource "aws_s3_bucket" "my" {
   bucket = "mytfebucket"
-  acl = "private"
+}
+
+resource "aws_s3_bucket_acl" "mytfebucket_bucket_acl" {
+  bucket = aws_s3_bucket.mytfebucket.id
+  acl    = "private"
 }
 
 /*
