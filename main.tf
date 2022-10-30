@@ -37,7 +37,3 @@ resource "aws_instance" "demo" {
     name = "Demo System"
   }
 }
-
-output "instance_id" {
-  instance = aws_instance.demo.id
-}
