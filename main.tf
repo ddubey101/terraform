@@ -22,6 +22,12 @@ variable "region" {
   description = "AWS Region"
 }
 
+resource "aws-s3-bucket" "my" {
+  bucket = "mytfebucket"
+  acl = "private"
+}
+
+/*
 variable "ami" {
   default = "ami-00831fc7c1e3ddc60"
   description = "Amazon Machine Image ID for Ubuntu Server 20.04"
@@ -39,4 +45,4 @@ resource "aws_instance" "demo" {
   tags = {
     name = "Demo System"
   }
-}
+}*/
