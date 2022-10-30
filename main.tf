@@ -9,6 +9,8 @@ terraform {
 
 provider "aws" {
   region = var.region
+  access_key = "AKIAWJLBBVE5LC5I2QFT"
+  secret_key = "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"
   assume_role {
   role_arn     = "arn:aws:iam::432384616762:role/dev-user-role-101"
   session_name = "SESSION_NAME"
