@@ -23,7 +23,7 @@ variable "region" {
   description = "AWS Region"
 }
 
-resource "aws-s3-bucket" "my" {
+resource "aws_s3_bucket" "my" {
   bucket = "mytfebucket"
   acl = "private"
 }
