@@ -23,7 +23,7 @@ variable "region" {
 }
 
 variable "ami" {
-  default = "ami-0f0c2f0668c8df684"
+  default = "ami-00831fc7c1e3ddc60"
   description = "Amazon Machine Image ID for Ubuntu Server 20.04"
 }
 
